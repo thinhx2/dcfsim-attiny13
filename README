@@ -1,0 +1,43 @@
+This is DCF77 encode program on ATTiny13. Input date and time from
+serial. Original code development on AVR Studio by ATTiny11.
+I convert avr-as and ATTiny13. And add some enhancement.
+
+Input date and time
+
+YY-MM-DD/W HH:MM<CR>
+
+W is monday is 1 and sunday is 7
+
+Original page
+
+http://elektronik-kompendium.de/public/arnerossius/schaltungen/avr/dcfsim.htm
+
+Replacing ATtiny11/12 by ATtiny13
+
+http://www.atmel.com/Images/doc4297.pdf
+
+
+Test on Arduino DCF77 library by set VERBOSE_DEBUG.
+
+
+rCT
+
+Waiting for DCF77 time ... 0000000000000010101000001010010010010001110010111010000BF
+0time lag inconsistent
+0000000000000000010111000000010010010010001110010111010000BF
+0time lag consistent
+Time is updated
+12:03:01 9 9 2017
+0000000000000000010100100001010010010010001110010111010000BF
+0time lag inconsistent
+0000000000000000010110100000010010010010001110010111010000BF
+0time lag consistent
+Time is updated
+12:05:01 9 9 2017
+0000000000000000010101100000010010010010001110010111010000BF
+0close to internal clock
+Time is updated
+12:06:01 9 9 2017
+0000000000000000010111100001010010010010001110010111010000BF
+0close to internal clock
+Time is updated
